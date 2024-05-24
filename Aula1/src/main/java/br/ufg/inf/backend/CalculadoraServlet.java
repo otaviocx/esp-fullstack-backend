@@ -18,10 +18,8 @@ public class CalculadoraServlet extends HttpServlet {
 		String operacao = req.getParameter("operacao");
 
 		try {
-//			double numero1 = Double.parseDouble(num1);
-//			double numero2 = Double.parseDouble(num2);
-			int numero1 = Integer.parseInt(num1);
-			int numero2 = Integer.parseInt(num2);
+			double numero1 = Double.parseDouble(num1);
+			double numero2 = Double.parseDouble(num2);
 
 			String mensagem = "Operação informada é inválida: " + operacao;
 			double resultado;
